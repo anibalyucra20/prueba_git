@@ -1,0 +1,158 @@
+selectores de clase y id
+
+
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+#estructura{
+	width: 90%;
+	height: auto;
+	margin: 0 auto;
+	background-color: #64F191;
+}
+#principal{
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	background-color: #A5ECFE;
+}
+#logo{
+	margin: 30px 0px;
+	float: left;
+	height: 100px;
+}
+#redes_sociales{
+	float: right;
+}
+#redes_sociales ul li{
+	display: inline;
+}
+#redes_sociales ul{
+	padding-top: 50px; 
+	padding-right: 30px;
+}
+#menu{
+	clear: both;
+}
+.main_nav {
+	list-style: none;
+	padding-left: 0;
+	background-color: #13a4a4;
+	text-align: center;
+	height: 42px;
+}
+.main_nav_item{
+	display: inline-block;
+	padding-top: 13px;
+}
+.main_nav_item a {
+
+	color: white;
+	padding: 7px;
+	border-radius: 3px;
+	text-decoration: none;
+	background-color: #5FCCE7;
+}
+.main_nav_item a:hover {
+	color: blue;
+}
+.main_nav_item a:active {
+	color: red;
+}
+
+.main_nav_item_item2{
+	list-style: none;
+	padding-left: 0;
+	text-align: center;
+	display: none;
+	position: absolute;
+}
+.main_nav_item_item2_2 a{
+	text-decoration: none;
+	padding: 10px 15px;
+	display: block;
+}
+.main_nav_item:hover > .main_nav_item_item2{
+	display: block;
+}
+
+
+#contenido{
+	width: 72%;
+	margin-top: 35px;
+	float: left;
+	margin-left: 10px;
+	text-align: justify;
+}
+#contenido_noticias{
+	width: 24%;
+	float: right;
+	margin-right: 10px;
+	margin-top: 35px;
+	text-align: justify;
+}
+#footer{
+	clear: both;
+	margin: 20px;
+	border-top: 2px #DAF321 solid;
+	text-align: center;
+}
+
+.img_caja {
+	background-color: #C5E4F3;
+	min-width: 310px;
+	max-width: 400px;
+	height: 200px;
+	float: left;
+	margin-right: 1%;
+	margin-bottom: 1%;
+}
+
+.img_caja img{
+	width: 100%;
+	height: 100%;
+	display: block;
+	filter: grayscale(1);
+	transition: all .5s linear;
+}
+.img_caja:hover img{
+	filter: grayscale(0); 
+}
+
+.slider{
+	width: 95%;
+	margin: auto;
+	overflow: hidden;
+	align-content: center;
+}
+.slider ul{
+	display: flex;
+	padding: 0;
+	width: 400%;
+	animation: tiempo 20s infinite;
+}
+.slider li{
+	width: 100%;
+	list-style: none;
+}
+.slider img{
+	width: 100%;
+}
+
+@keyframes tiempo{
+	0%{margin-left: 0;}
+	20%{margin-left: 0;}
+
+	25%{margin-left: -100%;}
+	45%{margin-left: -100%;}
+
+	50%{margin-left: -200%;}
+	70%{margin-left: -200%;}
+
+	75%{margin-left: -300%;}
+	95%{margin-left: -300%;}
+}
